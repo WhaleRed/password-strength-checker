@@ -2,7 +2,7 @@
 
 A basic password strength checker with a GUI.
 
----
+
 
 ## Goals
 
