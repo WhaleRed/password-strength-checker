@@ -1,6 +1,10 @@
-# password-strength-checker
-A basic password strength checker with GUI.
+# Password Strength Checker
+
+A basic password strength checker with a GUI.
+
 ---
-##Goals
-1. Learn Regex for pattern matching
-2. Basic cryptographic principles 
+
+## Goals
+
+1. Learn Regex for pattern matching  
+2. Understand basic cryptographic principles
