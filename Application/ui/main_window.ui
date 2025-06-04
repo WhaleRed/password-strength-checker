@@ -57,146 +57,150 @@
      </property>
     </widget>
    </widget>
-   <widget class="QPushButton" name="calculateButton">
+   <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>290</y>
-      <width>141</width>
-      <height>41</height>
+      <x>40</x>
+      <y>100</y>
+      <width>481</width>
+      <height>231</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">    QPushButton {
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QFrame" name="PasswordFrame">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+    background-color: transparent;
+}</string>
+          </property>
+          <property name="text">
+           <string>Password:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="passLineEdit">
+          <property name="font">
+           <font>
+            <family>Rockwell</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">    QLineEdit {
+        border: 2px solid #3399cc;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: white;
+        color: black;
+    }
+    QLineEdit:focus {
+        border: 2px solid #66ccff;
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="GPSFrame">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Is a measure of how many password or key combinations a system can try per second.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+    background-color: transparent;
+}</string>
+          </property>
+          <property name="text">
+           <string>Guesses per second:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="gpsLineEdit">
+          <property name="font">
+           <font>
+            <family>Rockwell</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">    QLineEdit {
+        border: 2px solid #3399cc;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: white;
+        color: black;
+    }
+    QLineEdit:focus {
+        border: 2px solid #66ccff;
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="calculateButton">
+       <property name="styleSheet">
+        <string notr="true">    QPushButton {
 	font: 75 12pt &quot;UD Digi Kyokasho NK-B&quot;;
         background-color: rgb(0, 170, 255);
         color: black;
         border-radius: 15px;
         padding: 5px 10px;
+		border: 2px solid black;
     }
     QPushButton:hover {
         background-color:  #3498db;
     }</string>
-    </property>
-    <property name="text">
-     <string>Calculate</string>
-    </property>
-   </widget>
-   <widget class="QFrame" name="PasswordFrame">
-    <property name="geometry">
-     <rect>
-      <x>80</x>
-      <y>120</y>
-      <width>421</width>
-      <height>62</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <item>
-      <widget class="QLabel" name="label_2">
-       <property name="font">
-        <font>
-         <pointsize>12</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QLabel {
-    background-color: transparent;
-}</string>
        </property>
        <property name="text">
-        <string>Password:</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLineEdit" name="lineEdit">
-       <property name="font">
-        <font>
-         <family>Rockwell</family>
-         <pointsize>12</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">    QLineEdit {
-        border: 2px solid #3399cc;
-        border-radius: 10px;
-        padding: 5px;
-        background-color: white;
-        color: black;
-    }
-    QLineEdit:focus {
-        border: 2px solid #66ccff;
-}</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QFrame" name="GPSFrame">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>190</y>
-      <width>419</width>
-      <height>62</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_2">
-     <item>
-      <widget class="QLabel" name="label_3">
-       <property name="font">
-        <font>
-         <pointsize>12</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QLabel {
-    background-color: transparent;
-}</string>
-       </property>
-       <property name="text">
-        <string>Guesses per second:</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLineEdit" name="lineEdit_2">
-       <property name="font">
-        <font>
-         <family>Rockwell</family>
-         <pointsize>12</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">    QLineEdit {
-        border: 2px solid #3399cc;
-        border-radius: 10px;
-        padding: 5px;
-        background-color: white;
-        color: black;
-    }
-    QLineEdit:focus {
-        border: 2px solid #66ccff;
-}</string>
-       </property>
-       <property name="text">
-        <string/>
+        <string>Calculate</string>
        </property>
       </widget>
      </item>
