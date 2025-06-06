@@ -1,6 +1,7 @@
 from PyQt5 import uic
 from PyQt5.QtWidgets import QMainWindow, QDialog
 import os
+from ..src import calculations
 
 class Main(QMainWindow):
   def __init__(self):
@@ -26,7 +27,7 @@ class Main(QMainWindow):
       self.calculateButton.setEnabled(False)
   
   def calculate(self):
-    print("calculating")
+    self.result.show()
     
 
 class Results(QDialog):
@@ -34,3 +35,5 @@ class Results(QDialog):
     super().__init__()
     ui_path = os.path.join(os.path.dirname(__file__), 'results_dialog.ui')
     uic.loadUi(ui_path, self)
+
+    self.closeButton.clicked.connect(self.close)
