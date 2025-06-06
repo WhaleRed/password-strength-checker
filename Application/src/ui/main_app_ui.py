@@ -1,7 +1,7 @@
 from PyQt5 import uic
 from PyQt5.QtWidgets import QMainWindow, QDialog
 import os
-from ..src import calculations
+from ..modules import calculations
 
 class Main(QMainWindow):
   def __init__(self):
