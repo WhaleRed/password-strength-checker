@@ -1,4 +1,4 @@
-from ui.main_app_ui import Main
+from src.ui.main_app_ui import Main
 from PyQt5.QtWidgets import QApplication
 import sys
 
